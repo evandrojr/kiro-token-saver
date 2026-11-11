@@ -20,5 +20,6 @@ One-shot setup that makes Kiro CLI spend fewer tokens.
 
 - rtk Kiro support is in PR [rtk-ai/rtk#5072](https://github.com/rtk-ai/rtk/pull/5072) (not merged). Until then `install.sh` builds from the PR branch (`RTK_GIT`, `RTK_BRANCH` override). Needs Rust/cargo.
 - rtk prints `No hook installed` on stderr under Kiro. Harmless.
+- Caveman skill is a slim version (1.2 KB). The original (4.7 KB) is kept in `assets/skills/caveman/SKILL.full.md`. In 3 runs each, slim used 0.38-0.44 credits vs 0.45-0.46 for full, with similar answer length (small sample).
 - Disable caveman in a session: say `stop caveman`. Disable permanently: delete the hook file.
 - Other ideas not installed (need your call): `/compact` discipline, smaller default model for simple tasks, `.kiroignore`-style excludes for `node_modules`/`target`, scoped steering with `inclusion: fileMatch` instead of `always`.
