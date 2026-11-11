@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Caveman por padrão",
+      "trigger": "SessionStart",
+      "description": "Ativa a skill caveman (respostas curtas, economia de tokens) no início de cada sessão. Desligar na sessão com \"stop caveman\" / \"normal mode\".",
+      "action": {
+        "type": "agent",
+        "prompt": "Ative a skill \"caveman\" para esta sessão e siga suas regras em todas as respostas: respostas curtas, sem floreio, mantendo todo fato técnico, código, caminhos e erros verbatim. Mantenha ativo até o usuário dizer \"stop caveman\" ou \"normal mode\". Não anuncie a ativação; apenas responda já no estilo."
+      }
+    }
+  ]
+}
